@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Approach from "@/components/Approach";
 import { AppleCardsCarouselDemo } from "@/components/Carousel";
 import Clients from "@/components/Clients";

@@ -1,11 +1,10 @@
-"use client";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { GlobeDemo } from "./GridGlobe";
 import Lottie from "react-lottie";
 import { useEffect, useState } from "react";
-import animationData from "@/data/confetti.json"
+import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { FaCopy } from "react-icons/fa6";
 import myImage from "@/public/myimage.png";
@@ -50,33 +49,42 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const [copied, setCopied] = useState(false);
-  const handleCopy = () => {
-    navigator.clipboard.writeText("jamalmohafil1@gmail.com");
-    setCopied(true);
-  };
-  useEffect(() => {
-    if (copied) {
-      setTimeout(() => {
-        setCopied(false);
-      }, 2000);
-    }
-  });
-
   const [minHeight, setMinHeight] = useState<string | undefined>(undefined);
 
+  // Fix: Only access browser APIs in useEffect to ensure client-side execution
+  const handleCopy = () => {
+    if (typeof navigator !== "undefined") {
+      navigator.clipboard.writeText("jamalmohafil1@gmail.com");
+      setCopied(true);
+    }
+  };
+
   useEffect(() => {
-    const updateMinHeight = () => {
-      if (window.innerHeight >= 1200 && window.innerWidth >=600) {
-        setMinHeight(id === 1 ? "300px" : id === 5 ? "300px" : undefined);
-      } else if (window.innerHeight <= 1200 && window.innerWidth >= 768) {
-        setMinHeight(id === 5 ? "300px" : undefined);
-      }else (
-        setMinHeight(undefined)
-      )
-    };
-    updateMinHeight();
-    window.addEventListener("resize", updateMinHeight);
-    return () => window.removeEventListener("resize", updateMinHeight);
+    if (copied) {
+      const timer = setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [copied]);
+
+  useEffect(() => {
+    // Only run this effect on the client side
+    if (typeof window !== "undefined") {
+      const updateMinHeight = () => {
+        if (window.innerHeight >= 1200 && window.innerWidth >= 600) {
+          setMinHeight(id === 1 || id === 5 ? "300px" : undefined);
+        } else if (window.innerHeight <= 1200 && window.innerWidth >= 768) {
+          setMinHeight(id === 5 ? "300px" : undefined);
+        } else {
+          setMinHeight(undefined);
+        }
+      };
+
+      updateMinHeight();
+      window.addEventListener("resize", updateMinHeight);
+      return () => window.removeEventListener("resize", updateMinHeight);
+    }
   }, [id]);
 
   return (
@@ -132,7 +140,7 @@ export const BentoGridItem = ({
         )}
         {/* ✅ الخلفية المتدرجة تظهر فقط عند id === 1 */}
         {id === 1 && (
-          <div className="absolute inset-0 bg-gradient-to-t from-black-100/[0.6] to-transparent"/>
+          <div className="absolute inset-0 bg-gradient-to-t from-black-100/[0.6] to-transparent" />
         )}
 
         <div
@@ -150,38 +158,12 @@ export const BentoGridItem = ({
           >
             {title}
           </div>
-          {id == 2 &&  <div className="w-full  h-full">
-                        {" "}
-                        <SkeletonFour />
-                      </div>}
-          {/* {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {["Typescript", "React.js", "Next.js"].map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                      lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-              </div>
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
-                {["MongoDB", "Express.js", "Nest.js"].map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                      lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
+          {id == 2 && (
+            <div className="w-full  h-full">
+              {" "}
+              <SkeletonFour />
             </div>
-          )} */}
+          )}
           {id === 6 && (
             <div className="mt-5 relative">
               <div className="absolute -bottom-5 right-0">

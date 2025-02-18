@@ -1,14 +1,26 @@
-'use client'
-import React from 'react'
-import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
-import { gridItems } from '@/data'
+"use client";
+import React from "react";
+const BentoGrid = dynamic(
+  () => import("./ui/BentoGrid").then((mod) => mod.BentoGrid),
+  {
+    ssr: false,
+  },
+);
 
-type Props = {}
+const BentoGridItem = dynamic(
+  () => import("./ui/BentoGrid").then((mod) => mod.BentoGridItem),
+  {
+    ssr: false,
+  },
+);import { gridItems } from "@/data";
+import dynamic from "next/dynamic";
+
+type Props = {};
 
 const Grid = (props: Props) => {
   return (
-    <section id="about" className='mt-24'>
-      <BentoGrid >
+    <section id="about" className="mt-24">
+      <BentoGrid>
         {gridItems.map((item) => (
           <BentoGridItem
             key={item.id}
@@ -25,6 +37,6 @@ const Grid = (props: Props) => {
       </BentoGrid>
     </section>
   );
-}
+};
 
-export default Grid
+export default Grid;
