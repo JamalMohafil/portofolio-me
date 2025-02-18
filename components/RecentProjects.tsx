@@ -1,3 +1,4 @@
+'use client'
 import { projects } from "@/data";
 import { title } from "process";
 import React from "react";

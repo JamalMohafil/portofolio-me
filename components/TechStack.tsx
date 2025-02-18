@@ -1,7 +1,8 @@
-import React from 'react'
-import Meteors  from "@/components/ui/Meteors";
-import { Skills } from '@/data';
-import Image from 'next/image';
+"use client";
+import React from "react";
+import Meteors from "@/components/ui/Meteors";
+import { Skills } from "@/data";
+import Image from "next/image";
 
 const TechStack = () => {
   return (
@@ -55,7 +56,7 @@ const TechStack = () => {
         </div>
       </div>
     </div>
-  ); 
-}
+  );
+};
 
-export default TechStack
+export default TechStack;
