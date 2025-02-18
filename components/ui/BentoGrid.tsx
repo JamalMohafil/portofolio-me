@@ -128,7 +128,7 @@ export const BentoGridItem = ({
           )}
           {id === 5 && (
             <img
-              src={"/myImage.png"}
+              src={"/myimage.png"}
               className={
                 "object-contain max-lg:max-h-[390px] max-md:absolute max-sm:hidden left-[160px] top-[100px] object-start w-full max-h-[450px]"
               }
