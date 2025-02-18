@@ -103,11 +103,23 @@ const Hero = (props: Props) => {
                 <MagicButton
                   icon={<FaLinkedin />}
                   position="right"
+                  handleClick={() => {
+                    if (typeof window !== "undefined") {
+                      window.location.href =
+                        "https://www.linkedin.com/in/jamal-mohafil/";
+                    }
+                  }}
                   title="My LinkedIn Profile"
                 />
                 <MagicButton
                   icon={<FaLocationArrow />}
                   position="right"
+                  handleClick={() => {
+                    if (typeof window !== "undefined") {
+                      window.location.href =
+                        "https://www.instagram.com/jamal_mohafil";
+                    }
+                  }}
                   title="Contact Me"
                 />
               </div>
