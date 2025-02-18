@@ -3,9 +3,9 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { GlobeDemo } from "./GridGlobe";
-const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+import Lottie from "react-lottie";
 import { useEffect, useState } from "react";
-import animationData from "@/data/confetti.json" assert { type: "json" };
+import animationData from "@/data/confetti.json"
 import MagicButton from "./MagicButton";
 import { FaCopy } from "react-icons/fa6";
 import myImage from "@/public/myimage.png";
