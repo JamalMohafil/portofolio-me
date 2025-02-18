@@ -1,28 +1,52 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
-// const poppins = Poppins({
-//   weight: ["400", "600"], // يمكنك تحديد الأوزان التي تحتاجها
-//   subsets: ["latin"], // يمكنك تحديد مجموعة الحروف
-// });
+// تعريف خط Poppins
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700"], // الأوزان المختلفة للخط
+  subsets: ["latin"],
+  variable: "--font-poppins",
+});
 
 export const metadata: Metadata = {
-  title: "Jamal Mohafil Portfolio  ",
-  description: "Best Amazon Clone in the world in 2025",
+  title: "Jamal Mohafil Portfolio",
+  description:
+    "A showcase of Jamal Mohafil's top projects, skills, and experiences.",
+  keywords: [
+    "Jamal Mohafil",
+    "Portfolio",
+    "Web Development",
+    "Next.js",
+    "React",
+    "Frontend Developer",
+  ],
+  creator: "Jamal Mohafil",
+  openGraph: {
+    title: "Jamal Mohafil Portfolio",
+    description: "Explore the top-notch projects and skills of Jamal Mohafil",
+    url: "https://jamalmohafil.vercel.app",
+    siteName: "Jamal Mohafil Portfolio",
+    images: [
+      {
+        url: "/jamal.jpg", // استبدل بمسار الصورة الخاصة بك
+        width: 800,
+        height: 600,
+        alt: "Jamal Mohafil Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jamal Mohafil Portfolio",
+    description:
+      "A portfolio showcasing the skills and projects of Jamal Mohafil",
+    images: ["/jamal.jpg"], // استبدل بمسار الصورة الخاصة بك
+  },
 };
-// ${geistMono.className} ${geistSans.className}         ${poppins.className}
 
 export default function RootLayout({
   children,
@@ -30,13 +54,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={`${poppins.variable}`}>
       <body
         suppressHydrationWarning
-        className={`antialiased dark
-          `}
+        className={`antialiased dark  ${poppins.className}`}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -52,12 +52,12 @@ const Hero = (props: Props) => {
           <div className="flex justify-center relative">
             <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center ">
               {/* <TextGenerateEffect
-              className="text-center text-[40px] md:text-5xl lg:text-6xl"
-              words="Hi there, I'm Jamal "
-            /> */}
+                className="text-center text-[40px] md:text-5xl lg:text-6xl"
+                words="Hi there, I'm Jamal "
+              /> */}
 
               {/* <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
-                Hello Everyone <br /> I'm <Cover>Jamal Mohafil</Cover>
+                Hello Everyone <br /> I'm <Cover >Jamal Mohafil</Cover>
               </h1> */}
               <HeroHighlight>
                 <motion.h1
