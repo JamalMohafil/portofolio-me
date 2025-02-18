@@ -140,14 +140,14 @@ const fetchProjects = async (): Promise<Project[]> => {
       id: 1,
       category: "Website",
       title: "Orkide Technology Website",
-      src: "/projects/1.png",
+      src: "/projects/1.webp",
       description: "orkide",
     },
     {
       id: 2,
       category: "Website",
       title: "Have a look",
-      src: "/projects/2.png",
+      src: "/projects/2.webp",
     },
     {
       id: 3,
@@ -155,19 +155,19 @@ const fetchProjects = async (): Promise<Project[]> => {
       title: "Goving Digital Store",
       videoURL:
         "https://www.youtube.com/watch?v=numMfTsaBjU&ab_channel=JamalMohafil",
-      src: "/projects/3.png",
+      src: "/projects/3.webp",
     },
     {
       id: 4,
       category: "Blog",
       title: "Goving Blog",
-      src: "/projects/4.png",
+      src: "/projects/4.webp",
     },
     {
       id: 5,
       category: "Landing Page",
       title: "Minotti Furniture: Stylish Landing Page Example",
-      src: "/projects/5.png",
+      src: "/projects/5.webp",
     },
     {
       id: 6,
@@ -177,7 +177,7 @@ const fetchProjects = async (): Promise<Project[]> => {
 
       description:
         "Tasks Management Application With Many Features like chatting & add friends & create teams, and more",
-      src: "/projects/chat.png",
+      src: "/projects/chat.webp",
       noImageContent:true,
     },
   ];

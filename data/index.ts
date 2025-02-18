@@ -76,7 +76,7 @@ export const projects = [
     id: 1,
     title: "Tasks Management & Chat Applcation",
     des: "A powerful app for managing tasks and real-time communication, combining efficiency with seamless collaboration.",
-    img: "/projects/chat.png",
+    img: "/projects/chat.webp",
     iconLists: [
       "/re.svg",
       "/tail.svg",
@@ -93,7 +93,7 @@ export const projects = [
     id: 3,
     title: "Orkide Tech Landing Page",
     des: "A modern and responsive website for Orkide Technology, featuring an elegant design and seamless user experience.",
-    img: "/projects/1.png",
+    img: "/projects/1.webp",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
     link: "https://orkide-technology.vercel.app/",
   },
@@ -101,7 +101,7 @@ export const projects = [
     id: 4,
     title: "Have a Look Landing Page",
     des: "A stylish landing page for a Turkish furniture company, showcasing elegant designs and advanced features.",
-    img: "/projects/2.png",
+    img: "/projects/2.webp",
     iconLists: ["/tail.svg", "/ts.svg", "/fm.svg"],
     link: "https://www.linkedin.com/posts/jamal-mohafil_nextjs-expressjs-mongodb-activity-7279202478900805632-Xr9u?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD_nuWYBsn7mMFl6zrFGlH9y5Wv5Szi4V2k",
   },
@@ -110,7 +110,7 @@ export const projects = [
     title: "Goving Digital Store",
     des: "Goving Store offers a wide range of game cards and subscriptions, providing a seamless digital shopping experience.",
 
-    img: "/projects/3.png",
+    img: "/projects/3.webp",
     iconLists: [
       "/zustand.png",
       "/ts.svg",
@@ -126,7 +126,7 @@ export const projects = [
     title: "Goving Blog",
     des: "Goving Blog is a fast and reliable platform for the latest tech and programming news.",
 
-    img: "/projects/4.png",
+    img: "/projects/4.webp",
     iconLists: [
       "/re.svg",
       "/tail.svg",
@@ -141,7 +141,7 @@ export const projects = [
     title: "Orkide Home",
     des: "Orkide Home offers high-quality and stylish furniture for a modern lifestyle.",
 
-    img: "/projects/orkide_home.png",
+    img: "/projects/orkide_home.webp",
     iconLists: [
       "/re.svg",
       "/ts.svg",
@@ -221,35 +221,35 @@ export const testimonials = [
       "At Have a Look, we redefine style by offering unique designs that capture the essence of modern living. Our mission is to blend creativity with practicality, ensuring every piece reflects individuality and modern aesthetics, making everyday life more stylish and enjoyable.",
     name: "Zein alkhouraki",
     title: "Owner Of Have a Look Company",
-    image: "/companies/lookay.png",
+    image: "/companies/lookay.webp",
   },
   {
     quote:
       "HomeOrkide brings warmth and elegance to every corner of your home with our curated home decor collection. We prioritize quality and sophistication, offering timeless designs that transform your living spaces into cozy, stylish sanctuaries that reflect your unique personality.",
     name: "Abdullah al kamel",
     title: "CEO of HomeOrkide",
-    image: "/companies/homeorkide.png",
+    image: "/companies/homeorkide.webp",
   },
   {
     quote:
       "At LifeOrkide, we bring comfort and elegance to your home with our premium bedding and home textiles. Our commitment to quality ensures luxurious fabrics and thoughtful designs that enhance your everyday living experience, creating a sanctuary of relaxation and beauty.",
     name: "David Smith",
     title: "Founder of LifeOrkide",
-    image: "/companies/lifeorkide.png",
+    image: "/companies/lifeorkide.webp",
   },
   {
     quote:
       "Kiwi Fashion redefines your wardrobe with stylish, modern clothing designed for every occasion. We focus on blending contemporary trends with high-quality materials, delivering apparel that empowers individuals to express themselves confidently and comfortably.",
     name: "Ahmed Iqraa",
     title: "Creative Director at Kiwi Fashion",
-    image: "/companies/kiwi.png",
+    image: "/companies/kiwi.webp",
   },
   {
     quote:
       "H2O Coffee delivers the finest coffee experiences, crafted from the best beans around the world. We are passionate about providing rich, aromatic brews that delight coffee lovers, offering a journey of flavor and quality in every cup, from morning rituals to evening indulgences.",
     name: "Ahmed Abo Taqa",
     title: "Head of H2O Coffee",
-    image: "/companies/coffee.png",
+    image: "/companies/coffee.webp",
   },
 ];
 
