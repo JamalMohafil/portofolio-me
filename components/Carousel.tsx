@@ -125,6 +125,7 @@ const DummyContent = ({
     {img && (
       <img
         src={img}
+        loading="lazy"
         alt={title}
         className="mt-4 rounded-lg object-contain w-full h-max"
       />

@@ -93,9 +93,7 @@ export default function Home() {
           <RecentProjects />
         </FadeInSection>
 
-        <FadeInSection delay={300}>
-          <AppleCardsCarouselDemo />
-        </FadeInSection>
+        <AppleCardsCarouselDemo />
 
         <FadeInSection delay={400}>
           <Clients />
