@@ -55,6 +55,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`${poppins.variable}`}>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="DPFUmZ6wUk69t-4Xpgo2NhrQV4Iuesk2zlUgghf72UI"
+        />
+      </head>
       <body
         suppressHydrationWarning
         className={`antialiased dark  ${poppins.className}`}
