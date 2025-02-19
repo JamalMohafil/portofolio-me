@@ -11,28 +11,32 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Jamal Mohafil Portfolio",
+  title: "Jamal Mohafil | Full Stack Developer",
+  applicationName: "Jamal Mohafil Portfolio",
   description:
-    "A showcase of Jamal Mohafil's top projects, skills, and experiences.",
+    "Jamal Mohafil is a skilled Next.js and React developer specializing in building high-performance web applications. Explore his top projects, skills, and experience.",
   keywords: [
     "Jamal Mohafil",
     "Portfolio",
-    "Web Development",
+    "Web Developer",
+    "Full Stack Developer",
     "Next.js",
     "React",
-    "Frontend Developer",
+    "JavaScript",
+    "TypeScript",
+    "Software Engineer",
   ],
-  creator: "Jamal Mohafil",
   openGraph: {
     title: "Jamal Mohafil Portfolio",
-    description: "Explore the top-notch projects and skills of Jamal Mohafil",
+    description:
+      "Explore Jamal Mohafil's top-notch projects, technical skills, and experiences in web development.",
     url: "https://jamalmohafil.vercel.app",
     siteName: "Jamal Mohafil Portfolio",
     images: [
       {
-        url: "/jamal.jpg", // استبدل بمسار الصورة الخاصة بك
-        width: 800,
-        height: 600,
+        url: "https://jamalmohafil.vercel.app/jamal.jpg", // استخدم رابطًا كاملاً بدل المسار النسبي
+        width: 1200,
+        height: 630,
         alt: "Jamal Mohafil Portfolio",
       },
     ],
@@ -41,10 +45,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jamal Mohafil Portfolio",
+    title: "Jamal Mohafil | Full Stack Developer",
     description:
-      "A portfolio showcasing the skills and projects of Jamal Mohafil",
-    images: ["/jamal.jpg"], // استبدل بمسار الصورة الخاصة بك
+      "Discover the skills and projects of Jamal Mohafil, an expert in Next.js, React, and full-stack development.",
+    images: ["https://jamalmohafil.vercel.app/jamal.jpg"],
+  },
+  alternates: {
+    canonical: "https://jamalmohafil.vercel.app",
   },
 };
 
