@@ -85,12 +85,12 @@ export default function Home() {
           <Grid />
         </FadeInSection>
 
-        <FadeInSection delay={100}>
-          <TechStack />
-        </FadeInSection>
 
-        <FadeInSection delay={200}>
+        <FadeInSection delay={100}>
           <RecentProjects />
+        </FadeInSection>
+        <FadeInSection delay={200}>
+          <TechStack />
         </FadeInSection>
 
         <AppleCardsCarouselDemo />
