@@ -218,40 +218,41 @@ export const Skills = [
 export const testimonials = [
   {
     quote:
-      "At Have a Look, we redefine style by offering unique designs that capture the essence of modern living. Our mission is to blend creativity with practicality, ensuring every piece reflects individuality and modern aesthetics, making everyday life more stylish and enjoyable.",
+      "Jamal's creativity and attention to detail have truly set him apart. He has consistently delivered outstanding work, combining modern design with functionality, making him an invaluable partner in our projects.",
     name: "Zein alkhouraki",
     title: "Owner Of Have a Look Company",
     image: "/companies/lookay.webp",
   },
   {
     quote:
-      "HomeOrkide brings warmth and elegance to every corner of your home with our curated home decor collection. We prioritize quality and sophistication, offering timeless designs that transform your living spaces into cozy, stylish sanctuaries that reflect your unique personality.",
+      "Working with Jamal has been a great experience. His expertise in both design and development has brought our projects to life in ways we never imagined. He approaches each task with professionalism and innovation.",
     name: "Abdullah al kamel",
     title: "CEO of HomeOrkide",
     image: "/companies/homeorkide.webp",
   },
   {
     quote:
-      "At LifeOrkide, we bring comfort and elegance to your home with our premium bedding and home textiles. Our commitment to quality ensures luxurious fabrics and thoughtful designs that enhance your everyday living experience, creating a sanctuary of relaxation and beauty.",
+      "Jamal is a true professional. His work with us has exceeded expectations, especially when it comes to bringing innovative ideas into reality. We’ve seen significant improvements in our projects thanks to his dedication and expertise.",
     name: "David Smith",
     title: "Founder of LifeOrkide",
     image: "/companies/lifeorkide.webp",
   },
   {
     quote:
-      "Kiwi Fashion redefines your wardrobe with stylish, modern clothing designed for every occasion. We focus on blending contemporary trends with high-quality materials, delivering apparel that empowers individuals to express themselves confidently and comfortably.",
+      "Jamal has an amazing ability to blend contemporary trends with quality craftsmanship. His work has elevated our designs and made them stand out in a crowded market. We highly value his contributions to our brand.",
     name: "Ahmed Iqraa",
     title: "Creative Director at Kiwi Fashion",
     image: "/companies/kiwi.webp",
   },
   {
     quote:
-      "H2O Coffee delivers the finest coffee experiences, crafted from the best beans around the world. We are passionate about providing rich, aromatic brews that delight coffee lovers, offering a journey of flavor and quality in every cup, from morning rituals to evening indulgences.",
+      "Jamal's dedication to quality and his passion for his work are evident in every project he tackles. His attention to detail and commitment to delivering exceptional results have been crucial to our continued success.",
     name: "Ahmed Abo Taqa",
     title: "Head of H2O Coffee",
     image: "/companies/coffee.webp",
   },
 ];
+
 
 
 export const companies = [
