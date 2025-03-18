@@ -84,7 +84,7 @@ const Hero = (props: Props) => {
                   <span className="max-md:mt-4 md:mt-2 max-sm:mt-0 max-md:block">
                     {" "}
                     I'm{" "}
-                    <Highlight className="text-black md:text-5xl text-3xl max-[370px]:text-2xl  sm:text-4xl dark:text-white">
+                    <Highlight  className="text-black md:text-5xl text-3xl max-[370px]:text-2xl  sm:text-4xl dark:text-white">
                       Jamal Mohafil
                     </Highlight>
                   </span>

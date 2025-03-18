@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
+import ChatbotWidget from "@/components/Asisstant";
 // تعريف خط Poppins
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"], // الأوزان المختلفة للخط
@@ -75,6 +76,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
         </ThemeProvider>
+        <ChatbotWidget />
         <Analytics />
       </body>
     </html>

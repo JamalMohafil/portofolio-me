@@ -16,6 +16,9 @@ const nextConfig = {
   experimental: {
     // أضف إعدادات تجريبية إذا كنت بحاجة إليها
   },
+  env: {
+    GEMINI_API_KEY: process.env.GEMINI_API_KEY,
+  },
 };
 
 export default nextConfig;

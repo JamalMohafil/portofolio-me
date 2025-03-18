@@ -227,14 +227,14 @@ export const testimonials = [
     quote:
       "Working with Jamal has been a great experience. His expertise in both design and development has brought our projects to life in ways we never imagined. He approaches each task with professionalism and innovation.",
     name: "Abdullah al kamel",
-    title: "CEO of HomeOrkide",
+    title: "CEO of Orkide Home",
     image: "/companies/homeorkide.webp",
   },
   {
     quote:
       "Jamal is a true professional. His work with us has exceeded expectations, especially when it comes to bringing innovative ideas into reality. We’ve seen significant improvements in our projects thanks to his dedication and expertise.",
     name: "David Smith",
-    title: "Founder of LifeOrkide",
+    title: "Founder of Orkide Life",
     image: "/companies/lifeorkide.webp",
   },
   {
